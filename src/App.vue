@@ -1,21 +1,15 @@
 <template>
   <div id="app">
-    <hello></hello>
+    <inputs></inputs>
   </div>
 </template>
 
 <script>
-import Hello from './components/Hello.vue'
+  import Inputs from './components/Inputs.vue'
 
-export default {
-  components: {
-    Hello
+  export default {
+    components: {
+      Inputs
+    }
   }
-}
 </script>
-
-<style scoped>
-body {
-  font-family: Helvetica, sans-serif;
-}
-</style>

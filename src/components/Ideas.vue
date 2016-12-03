@@ -1,17 +1,17 @@
 <template>
-  <div>
+  <div class="ideas">
     <section v-for='(idea, index) in ideas'>
-      <h1 contenteditable='true'>{{idea.title}}</h1>
-      <h1>{{idea.body}}</h1>
-      <h1>{{idea.quality}}</h1>
-      <button @click='upQuality(index)'>Up quality</button>
-      <button @click='downQuality(index)'>Down quality</button>
+      <p class="title" contenteditable='true'>{{idea.title}}</p>
+      <p class="body">{{idea.body}}</p>
+      <p>Quality: {{idea.quality}}</p>
+      <button class="quality-buttons" @click='upQuality(index)'>Up quality</button>
+      <button class="quality-buttons" @click='downQuality(index)'>Down quality</button>
     </section>
   </div>
 </template>
 
 <script>
-export default {
-  props: ['ideas', 'upQuality', 'downQuality']
-}
+  export default {
+    props: ['ideas', 'upQuality', 'downQuality']
+  }
 </script>
